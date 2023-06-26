@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainCoursesActivity"
+    android:background="#161616">
+
+    <!-- CardView ni  Height match nathi thati -->
+
+    <RelativeLayout
+        android:id="@+id/header_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/mainrelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/maincourses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAIN COURSES"
+                android:textSize="30sp"
+                android:fontFamily="@font/roboto_bolditalic"
+                android:textColor="#00802b"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maincourses"
+                android:layout_margin="6dp">
+
+                <ImageView
+                    android:id="@+id/rate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rate"/>
+
+                <ImageView
+                    android:id="@+id/rate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rate"
+                    android:layout_toRightOf="@id/rate1"/>
+
+                <ImageView
+                    android:id="@+id/rate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rate"
+                    android:layout_toRightOf="@id/rate2"/>
+
+                <ImageView
+                    android:id="@+id/rate4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rate"
+                    android:layout_toRightOf="@id/rate3"/>
+
+                <ImageView
+                    android:id="@+id/rate5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rate"
+                    android:layout_toRightOf="@id/rate4"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/maincourses_small"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_relativelayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_palakpaneer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/txt_palakpaneer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Palak Paneer"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#800000"/>
+
+                        <RelativeLayout
+                            android:id="@+id/palakpaneerrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_palakpaneer"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate1"
+                                android:layout_toRightOf="@id/palakpaneerrate1"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate2"
+                                android:layout_toRightOf="@id/palakpaneerrate2"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate3"
+                                android:layout_toRightOf="@id/palakpaneerrate3"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate4"
+                                android:layout_toRightOf="@id/palakpaneerrate4"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/palakpaneerrate"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/txt_foodpalakpaneer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Food :"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#F06A90B5"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Vegetarian"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#ff0000"
+                                android:layout_alignBaseline="@id/txt_foodpalakpaneer"
+                                android:layout_toRightOf="@id/txt_foodpalakpaneer"
+                                android:layout_marginLeft="2dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/rl_palakpaneer"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/palak_paneer"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:src="@drawable/palak_paneer"-->
+                    <!--                    android:layout_alignParentRight="true"/>-->
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/card1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_palakpaneer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/txt_palakpaneer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Palak Paneer"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#800000"/>
+
+                        <RelativeLayout
+                            android:id="@+id/palakpaneerrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_palakpaneer"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate1"
+                                android:layout_toRightOf="@id/palakpaneerrate1"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate2"
+                                android:layout_toRightOf="@id/palakpaneerrate2"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate3"
+                                android:layout_toRightOf="@id/palakpaneerrate3"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate4"
+                                android:layout_toRightOf="@id/palakpaneerrate4"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/palakpaneerrate"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/txt_foodpalakpaneer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Food :"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#F06A90B5"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Vegetarian"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#ff0000"
+                                android:layout_alignBaseline="@id/txt_foodpalakpaneer"
+                                android:layout_toRightOf="@id/txt_foodpalakpaneer"
+                                android:layout_marginLeft="2dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/rl_palakpaneer"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/palak_paneer"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:src="@drawable/palak_paneer"-->
+                    <!--                    android:layout_alignParentRight="true"/>-->
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/card2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_palakpaneer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/txt_palakpaneer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Palak Paneer"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#800000"/>
+
+                        <RelativeLayout
+                            android:id="@+id/palakpaneerrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_palakpaneer"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate1"
+                                android:layout_toRightOf="@id/palakpaneerrate1"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate2"
+                                android:layout_toRightOf="@id/palakpaneerrate2"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate3"
+                                android:layout_toRightOf="@id/palakpaneerrate3"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate4"
+                                android:layout_toRightOf="@id/palakpaneerrate4"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/palakpaneerrate"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/txt_foodpalakpaneer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Food :"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#F06A90B5"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Vegetarian"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#ff0000"
+                                android:layout_alignBaseline="@id/txt_foodpalakpaneer"
+                                android:layout_toRightOf="@id/txt_foodpalakpaneer"
+                                android:layout_marginLeft="2dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/rl_palakpaneer"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/palak_paneer"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:src="@drawable/palak_paneer"-->
+                    <!--                    android:layout_alignParentRight="true"/>-->
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/card3">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_palakpaneer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/txt_palakpaneer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Palak Paneer"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#800000"/>
+
+                        <RelativeLayout
+                            android:id="@+id/palakpaneerrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_palakpaneer"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate1"
+                                android:layout_toRightOf="@id/palakpaneerrate1"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate2"
+                                android:layout_toRightOf="@id/palakpaneerrate2"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate3"
+                                android:layout_toRightOf="@id/palakpaneerrate3"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate4"
+                                android:layout_toRightOf="@id/palakpaneerrate4"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/palakpaneerrate"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/txt_foodpalakpaneer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Food :"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#F06A90B5"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Vegetarian"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#ff0000"
+                                android:layout_alignBaseline="@id/txt_foodpalakpaneer"
+                                android:layout_toRightOf="@id/txt_foodpalakpaneer"
+                                android:layout_marginLeft="2dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/rl_palakpaneer"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/palak_paneer"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:src="@drawable/palak_paneer"-->
+                    <!--                    android:layout_alignParentRight="true"/>-->
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/card4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_palakpaneer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/txt_palakpaneer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Palak Paneer"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="#800000"/>
+
+                        <RelativeLayout
+                            android:id="@+id/palakpaneerrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_palakpaneer"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate1"
+                                android:layout_toRightOf="@id/palakpaneerrate1"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate2"
+                                android:layout_toRightOf="@id/palakpaneerrate2"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate3"
+                                android:layout_toRightOf="@id/palakpaneerrate3"/>
+
+                            <ImageView
+                                android:id="@+id/palakpaneerrate5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/rate"
+                                android:layout_alignBaseline="@id/palakpaneerrate4"
+                                android:layout_toRightOf="@id/palakpaneerrate4"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/palakpaneerrate"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:id="@+id/txt_foodpalakpaneer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Food :"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#F06A90B5"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Vegetarian"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textStyle="bold"
+                                android:textColor="#ff0000"
+                                android:layout_alignBaseline="@id/txt_foodpalakpaneer"
+                                android:layout_toRightOf="@id/txt_foodpalakpaneer"
+                                android:layout_marginLeft="2dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/rl_palakpaneer"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="end">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/palak_paneer"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!--                <ImageView-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:src="@drawable/palak_paneer"-->
+                    <!--                    android:layout_alignParentRight="true"/>-->
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
